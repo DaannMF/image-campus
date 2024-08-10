@@ -1,0 +1,9 @@
+Proceso Menor
+    Definir vida como Entero;
+    Escribir "Ingrese la vida de su personaje";
+    Leer vida;
+    Si vida > 0 entonces
+        Escribir "Está vivo";
+    Si no
+        Escribir "No está vivo"
+Fin Proceso

@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
+  <diagram id="l-Jjps4D73NWxP8bs-ZK" name="Página-1">
+    <mxGraphModel dx="934" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="pxL3Kdr-6ICtDBTAwP_Y-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="413.5" y="110" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-2" value="Proceso EstaVivo" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="312.48" y="70" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v8F2RdafBJqy80VBig4R-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-4" target="pxL3Kdr-6ICtDBTAwP_Y-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-4" value="Defino vida como Entero" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="323.5" y="132" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-5" value="Fin Proceso" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="352.48" y="490" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-7" target="pxL3Kdr-6ICtDBTAwP_Y-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-7" value="Escribir &quot;Ingrese la vida del personaje&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="281.6" y="190" width="261.76" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v8F2RdafBJqy80VBig4R-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-9" target="wfMochF9GXrMirJv1F-9-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-9" value="Leer vida" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="323.24" y="250" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="wfMochF9GXrMirJv1F-9-5" target="wfMochF9GXrMirJv1F-9-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="wfMochF9GXrMirJv1F-9-5" target="wfMochF9GXrMirJv1F-9-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="626" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-5" value="vida &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="338.48" y="320" width="148" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="wfMochF9GXrMirJv1F-9-7" target="pxL3Kdr-6ICtDBTAwP_Y-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="218" y="460" />
+              <mxPoint x="413" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-7" value="Escribir &quot;Está vivo&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="122.48" y="400" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="wfMochF9GXrMirJv1F-9-8" target="pxL3Kdr-6ICtDBTAwP_Y-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="625" y="460" />
+              <mxPoint x="413" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-8" value="Escribir &quot;No está vivo&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="530" y="400" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-14" value="SI" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="264.76" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfMochF9GXrMirJv1F-9-15" value="NO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="512.48" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
