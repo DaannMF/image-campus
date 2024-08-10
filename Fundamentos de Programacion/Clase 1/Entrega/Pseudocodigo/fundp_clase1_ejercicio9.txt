@@ -1,4 +1,4 @@
-Proceso Menor
+Proceso EsMagico
     Definir numero como Entero;
     Definir palabra como Entero;
     Escribir "Ingrese un número";
