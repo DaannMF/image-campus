@@ -1,0 +1,7 @@
+Proceso “ConvertirACentimetros”
+    Definir numero1, resultado como Entero;
+    Escribir "Ingrese número en metros";
+    Leer numero1;
+    resultado = numero1 * 100;
+    Escribir "El resultado es: " + resultado + " centímetros";
+Fin Proceso
