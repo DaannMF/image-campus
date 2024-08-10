@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
+  <diagram id="lgKk08yNPc29-7CC4fd6" name="Página-1">
+    <mxGraphModel dx="934" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="JqgqNDSVr-Pdvo-o05fB-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="86" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-2" value="Proceso Bienvenida" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="46" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqgqNDSVr-Pdvo-o05fB-4" target="JqgqNDSVr-Pdvo-o05fB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-4" value="Defino nombre como Cadena" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="108" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="JqgqNDSVr-Pdvo-o05fB-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="188" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-18" value="Fin Proceso" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="380" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqgqNDSVr-Pdvo-o05fB-19" target="JqgqNDSVr-Pdvo-o05fB-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-19" value="Escribir &quot;Ingrese su nombre&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="170" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqgqNDSVr-Pdvo-o05fB-22" target="JqgqNDSVr-Pdvo-o05fB-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-22" value="Leer nombre" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="240" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqgqNDSVr-Pdvo-o05fB-23" target="JqgqNDSVr-Pdvo-o05fB-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JqgqNDSVr-Pdvo-o05fB-23" value="Escribir &quot;Hola &quot; + nombre + &quot;, cómo estás?&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="287.5" y="300" width="285" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

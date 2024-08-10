@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
+  <diagram id="l-Jjps4D73NWxP8bs-ZK" name="Página-1">
+    <mxGraphModel dx="934" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="pxL3Kdr-6ICtDBTAwP_Y-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="413.5" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-2" value="Proceso Mayor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="353.5" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-4" target="pxL3Kdr-6ICtDBTAwP_Y-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-4" value="Defino numero1 como Entero" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="323.5" y="142" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-5" value="Fin Proceso" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="353.5" y="665" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-7" target="pxL3Kdr-6ICtDBTAwP_Y-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-7" value="Escribir &quot;Ingrese primer numero&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="308.5" y="242" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-9" target="pxL3Kdr-6ICtDBTAwP_Y-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-9" value="Leer numero1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="323.5" y="294" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-11" target="pxL3Kdr-6ICtDBTAwP_Y-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="223" y="620" />
+              <mxPoint x="414" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-11" value="Escribir &quot;El mayor número es: &quot; + numero1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="551" width="285" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-12" target="pxL3Kdr-6ICtDBTAwP_Y-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-12" value="Defino numero2 como Entero" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="190" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-17" target="pxL3Kdr-6ICtDBTAwP_Y-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-17" value="Escribir &quot;Ingrese segundo numero&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="298" y="340" width="231" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-18" target="pxL3Kdr-6ICtDBTAwP_Y-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-18" value="Leer numero2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="392" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-21" target="pxL3Kdr-6ICtDBTAwP_Y-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="616" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-21" target="pxL3Kdr-6ICtDBTAwP_Y-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="223" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-21" value="numero1 &amp;gt; numero 2" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="329" y="460" width="169" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pxL3Kdr-6ICtDBTAwP_Y-23" target="pxL3Kdr-6ICtDBTAwP_Y-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="616" y="620" />
+              <mxPoint x="414" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-23" value="Escribir &quot;El mayor número es: &quot; + numero2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="473.5" y="550" width="285" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-27" value="NO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="529" y="460" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pxL3Kdr-6ICtDBTAwP_Y-28" value="SI" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="252" y="460" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
