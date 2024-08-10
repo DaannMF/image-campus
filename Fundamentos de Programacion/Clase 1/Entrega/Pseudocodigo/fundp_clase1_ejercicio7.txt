@@ -1,0 +1,11 @@
+Proceso Menor
+    Definir numero1, numero2 como Entero;
+    Escribir "Ingrese primer número";
+    Leer numero1;
+    Escribir "Ingrese segundo número";
+    Leer numero2;
+    Si numero1 < numero2 entonces
+        Escribir "El numero más chico es: " + numero1;
+    Si no
+        Escribir "El numero más chico es: " + numero2;
+Fin Proceso
