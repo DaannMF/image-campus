@@ -1,0 +1,12 @@
+Proceso Menor
+    Definir numero como Entero;
+    Definir palabra como Entero;
+    Escribir "Ingrese un número";
+    Leer numero;
+    Escribir "Ingrese una palabra";
+    Leer palabra;
+    Si numero > 10 entonces
+        Escribir "Es mágica la palabra: " + palabra;
+    Si no
+        Escribir "Nada es mágico"
+Fin Proceso
