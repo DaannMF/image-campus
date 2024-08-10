@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
+  <diagram name="Página-1" id="5MLIgmbyQTMas91KzPi2">
+    <mxGraphModel dx="934" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-1" target="Eu-FdCBtpxaOLu7uK6WU-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-1" value="Proceso Resta" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="70" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-3" target="Eu-FdCBtpxaOLu7uK6WU-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-3" value="Defino numero1 como Entero" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="132" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-5" target="Eu-FdCBtpxaOLu7uK6WU-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-5" value="Defino numero2 como Entero" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="182" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-6" target="Eu-FdCBtpxaOLu7uK6WU-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-6" value="Defino resultado como Entero" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="232" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="342" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-11" value="Escribir &quot;Ingrese el primer número&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="281" width="240" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-13" target="Eu-FdCBtpxaOLu7uK6WU-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-13" value="Leer numero1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="345" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-15" target="Eu-FdCBtpxaOLu7uK6WU-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-15" value="Escribir &quot;Ingrese el segundo número&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="391" width="240" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-16" target="Eu-FdCBtpxaOLu7uK6WU-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-16" value="Leer numero2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="455" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-21" target="Eu-FdCBtpxaOLu7uK6WU-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-21" value="resultado = numero1 - numero2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="502" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Eu-FdCBtpxaOLu7uK6WU-23" target="Eu-FdCBtpxaOLu7uK6WU-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-23" value="Escribir &quot;El resultado es: &quot; + resultado" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="552" width="240" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu-FdCBtpxaOLu7uK6WU-25" value="Fin Proceso" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="614" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

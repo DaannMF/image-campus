@@ -1,0 +1,9 @@
+Proceso Resta
+    Definir numero1, numero2, resultado como Entero;
+    Escribir "Ingrese primer número";
+    Leer numero1;
+    Escribir "Ingrese segundo número";
+    Leer numero2;
+    resultado = numero1 - numero2;
+    Escribir "El resultado es: " + resultado;
+Fin Proceso
