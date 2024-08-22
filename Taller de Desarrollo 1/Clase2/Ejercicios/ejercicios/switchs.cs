@@ -83,7 +83,7 @@ namespace Ejercicios {
 
         public void Ejercicio3() {
             Char letra;
-            Console.WriteLine("Ingrese un número del 1 al 7");
+            Console.WriteLine("Ingrese una letra");
             Char.TryParse(Console.ReadLine(), out letra);
 
             switch (letra) {
@@ -97,7 +97,7 @@ namespace Ejercicios {
                 case 'O':
                 case 'u':
                 case 'U':
-                    Console.WriteLine(letra);
+                    Console.WriteLine("Elegiste la vocal : " + letra);
                     break;
                 default:
                     Console.WriteLine("No es una vocal");
