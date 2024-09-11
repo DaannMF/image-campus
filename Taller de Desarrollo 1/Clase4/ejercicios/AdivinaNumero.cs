@@ -6,9 +6,9 @@ namespace Ejercicios;
 public class AdivinaNumero
 {
 
-    const Int16 CNATIDAD_INTENTOS = 10;
-    const string SI = "si";
-    const string NO = "no";
+    const Int16 MAX_TRIES = 10;
+    const String SI = "si";
+    const String NO = "no";
 
 
     public void Ejercicio()
@@ -16,18 +16,18 @@ public class AdivinaNumero
         Int16 input, tries = 0;
         Int32 secret = 0;
         String? inputContinues;
-        Boolean continues = true, adivinaNumero;
+        Boolean continues = true, guessed;
         Random r = new Random();
 
         while (continues)
         {
             Console.WriteLine("Inicio del juego, tienes 10 intentos, mucha suerte");
-            secret = r.Next(1, 100);
+            secret = r.Next(1, 101);
             input = 0;
             inputContinues = "";
-            adivinaNumero = false;
+            guessed = false;
 
-            for (int i = 0; i < CNATIDAD_INTENTOS; i++)
+            for (int i = 0; i < MAX_TRIES; i++)
             {
                 while (input == 0)
                 {
@@ -40,7 +40,7 @@ public class AdivinaNumero
 
                 if (input == secret)
                 {
-                    adivinaNumero = true;
+                    guessed = true;
                     break;
                 }
                 else if (input > secret)
@@ -52,15 +52,14 @@ public class AdivinaNumero
                     Console.WriteLine("Ups no adivinaste, el número secreto es MAYOR");
                 }
 
-                Console.WriteLine($"Te quedan {CNATIDAD_INTENTOS - tries} intentos");
+                Console.WriteLine($"Te quedan {MAX_TRIES - tries} intentos");
                 input = 0;
             }
 
-            if (adivinaNumero)
+            if (guessed)
             {
                 Console.WriteLine("Felicidades advinaste el número :)");
                 Console.WriteLine($"Cantidad de intentos {tries}");
-
             }
             else
             {
@@ -85,7 +84,7 @@ public class AdivinaNumero
             }
         }
 
-        Console.WriteLine("Gracias por jugar, Adivina el número");
+        Console.WriteLine("Gracias por jugar a Adivina el número");
     }
 }
 
