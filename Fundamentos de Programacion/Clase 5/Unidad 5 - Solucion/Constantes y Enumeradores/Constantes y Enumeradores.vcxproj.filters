@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Estructuras de Control.cpp">
+    <ClCompile Include="Constantes y Enumeradores.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

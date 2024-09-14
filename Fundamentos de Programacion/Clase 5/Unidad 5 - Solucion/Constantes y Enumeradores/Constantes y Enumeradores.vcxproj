@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0f9872b9-12bb-494d-b317-fbef12bcb209}</ProjectGuid>
-    <RootNamespace>EstructurasdeControl</RootNamespace>
+    <ProjectGuid>{b92b9824-8496-4459-ab4c-a5e397a1f6a6}</ProjectGuid>
+    <RootNamespace>ConstantesyEnumeradores</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
