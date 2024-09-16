@@ -83,7 +83,7 @@ void Ejercicio4()
     cout << "Ingrese el segundo número" << endl;
     cin >> num2;
 
-    cout << "Bien, ahora ingres la operación que desea realizar" << endl;
+    cout << "Bien, ahora ingrese la operación que desea realizar" << endl;
     cout << "1 - Suma" << endl;
     cout << "2 - Resta" << endl;
     cout << "3 - Multiplicación" << endl;
@@ -140,12 +140,12 @@ void Ejercicio5()
         {
         case ConversionType::KILOMETERS:
             cout << "Bien, ingrese cantidad de kilómetros" << endl;
-            cin >> input;
+            cin >> num1;
             cout << "La cantidad de millas correspondiente a " << num1 << "kilómetros es :" << num1 * MILES_TO_KILOMETERS << endl;
             break;
         case ConversionType::MILES:
             cout << "Bien, ingrese cantidad de millas" << endl;
-            cin >> input;
+            cin >> num1;
             cout << "La cantidad de kilómetros correspondiente a " << num1 << "millas es :" << num1 * KILOMETER_TO_MILES << endl;
             break;
         default:
