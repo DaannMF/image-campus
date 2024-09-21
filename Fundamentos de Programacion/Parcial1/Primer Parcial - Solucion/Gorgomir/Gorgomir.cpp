@@ -11,18 +11,20 @@ const std::string PICKAXE_WOOD_NAME = "Madera";
 const std::string PICKAXE_IRON_NAME = "Hierro";
 const std::string PICKAXE_DAIMON_NAME = "Diamante";
 
-const int EXPLORE_CHANCE = 10;
-const int PICK_BERRIES_CHANCE = 30;
-const int NFT_CHANCE = 5;
 const int MINING_TRIES = 4;
-
-
 const int BERRIES_RESTORE_POINTS = 3;
 const int MIN_LIFE_TO_MINE = 4;
 const float MINING_DAMAGE = 0.5f;
 const int FORGE_COST = 2;
 const int FORGE_PRICE = 30;
 const int MIN_IRON_TO_FORGE = 2;
+
+enum Chances
+{
+    EXPLORE_CHANCE = 10,
+    PICK_BERRIES_CHANCE = 30,
+    NFT_CHANCE = 5,
+};
 
 enum Action
 {
@@ -50,7 +52,8 @@ enum Durability
     D_DAIMON = 30,
 };
 
-enum Prices {
+enum Prices
+{
     P_NONE = 0,
     P_WOOD = 5,
     P_IRON = 10,
@@ -58,7 +61,7 @@ enum Prices {
     P_NFT = 10,
 };
 
-enum Chance
+enum PChance
 {
     CH_NONE = 0,
     CH_WOOD = 30,
@@ -71,7 +74,7 @@ static int GetSelectedAction();
 static bool IsValidInput(int input);
 static std::string GetPickAxeName(PickAxes pickAxe);
 static int GetPickAxeChance(PickAxes pickAxe);
-float GetPickAxeDurabilty(PickAxes pickAxe);
+float GetPickAxeDurability(PickAxes pickAxe);
 static int GetPickAxePrice(PickAxes pickAxe);
 static bool GetChance(int chance);
 static int GetRandomNumber(int min, int max);
@@ -126,7 +129,7 @@ int main()
 
         NFT(gold, is_chance_meet);
 
-        if (!is_chance_meet) 
+        if (!is_chance_meet)
         {
             std::cout << "No pasó nada en este hermoso día" << turn << std::endl;
         }
@@ -149,7 +152,7 @@ void ShowStats(int life, int gold, int iron, PickAxes pickaxe, float durability,
 int GetSelectedAction()
 {
     int input = 0;
-    std::cout << "Que accion deberia realizar Gorgomir?" << std::endl;
+    std::cout << "Que acción debería realizar Gorgomir?" << std::endl;
     std::cout << "1 - Explorar zona" << std::endl;
     std::cout << "2 - Recoger bayas" << std::endl;
     std::cout << "3 - Minar" << std::endl;
@@ -160,7 +163,7 @@ int GetSelectedAction()
 
     while (!IsValidInput(input))
     {
-        std::cout << "Ups, el valor ingresao no es correcto, ingresa un valor del 1 al 6" << std::endl;
+        std::cout << "Ups, el valor ingresado no es correcto, ingresa un valor del 1 al 6" << std::endl;
         std::cin >> input;
     }
 
@@ -194,49 +197,52 @@ std::string GetPickAxeName(PickAxes pickAxe)
     return name;
 }
 
-int GetPickAxeChance(PickAxes pickAxe) {
+int GetPickAxeChance(PickAxes pickAxe)
+{
     int chance;
     switch (pickAxe)
     {
     case PickAxes::WOOD:
-        chance = Chance::CH_WOOD;
+        chance = PChance::CH_WOOD;
         break;
     case PickAxes::IRON:
-        chance = Chance::CH_IRON;
+        chance = PChance::CH_IRON;
         break;
     case PickAxes::DAIMON:
-        chance = Chance::CH_DAIMON;
+        chance = PChance::CH_DAIMON;
         break;
     default:
-        chance = Chance::CH_NONE;
+        chance = PChance::CH_NONE;
         break;
     }
 
     return chance;
 }
 
-float GetPickAxeDurabilty(PickAxes pickAxe) {
-    float durabilty;
+float GetPickAxeDurability(PickAxes pickAxe)
+{
+    float durability;
     switch (pickAxe)
     {
     case PickAxes::WOOD:
-        durabilty = Durability::D_WOOD;
+        durability = Durability::D_WOOD;
         break;
     case PickAxes::IRON:
-        durabilty = Durability::D_IRON;
+        durability = Durability::D_IRON;
         break;
     case PickAxes::DAIMON:
-        durabilty = Durability::D_DAIMON;
+        durability = Durability::D_DAIMON;
         break;
     default:
-        durabilty = Durability::D_NONE;
+        durability = Durability::D_NONE;
         break;
     }
 
-    return durabilty;
+    return durability;
 }
 
-int GetPickAxePrice(PickAxes pickAxe) {
+int GetPickAxePrice(PickAxes pickAxe)
+{
     int price;
     switch (pickAxe)
     {
@@ -259,11 +265,12 @@ int GetPickAxePrice(PickAxes pickAxe) {
 
 bool GetChance(int chance)
 {
-    std:: srand(time(0));
+    std::srand(time(0));
     return ((std::rand() % 100) + 1) <= chance;
 }
 
-int GetRandomNumber(int min, int max) {
+int GetRandomNumber(int min, int max)
+{
     std::srand(time(0));
     int dif = max - min + 1;
     return rand() % dif + min;
@@ -271,19 +278,21 @@ int GetRandomNumber(int min, int max) {
 
 void Explore(int &gold, int &life, bool &is_chance_meet)
 {
-    if (GetChance(EXPLORE_CHANCE)) {
+    if (GetChance(Chances::EXPLORE_CHANCE))
+    {
         std::cout << "Conseguiste monedas! " << std::endl;
         gold += GetRandomNumber(5, 20);
         is_chance_meet = true;
     }
 
     std::cout << "Te ha picado una araña! " << std::endl;
-    life--; 
+    life--;
 }
 
 void PickBerries(int &life, bool &is_chance_meet)
 {
-    if (GetChance(PICK_BERRIES_CHANCE)) {
+    if (GetChance(Chances::PICK_BERRIES_CHANCE))
+    {
         std::cout << "Encontraste bayas! " << std::endl;
         if (life + BERRIES_RESTORE_POINTS > MAX_LIFE)
         {
@@ -304,7 +313,8 @@ void Mining(int &life, float &durability, PickAxes &pickAxe, int &exp, int &iron
 {
     int chance = 0;
     int obtained_iron = 0;
-    if (life < MIN_LIFE_TO_MINE || durability <= 0) {
+    if (life < MIN_LIFE_TO_MINE || durability <= 0)
+    {
         std::cout << "Lo siento, no se puede minar! " << std::endl;
         return;
     }
@@ -312,18 +322,21 @@ void Mining(int &life, float &durability, PickAxes &pickAxe, int &exp, int &iron
     chance = GetPickAxeChance(pickAxe) + exp;
     for (int i = 0; i < MINING_TRIES; i++)
     {
-        if (durability <= 0) {
+        if (durability <= 0)
+        {
             std::cout << "El pico esta roto " << std::endl;
             break;
         }
 
-        if (GetChance(chance)) {
+        if (GetChance(chance))
+        {
             std::cout << "Obtuviste 1 de hierro! " << std::endl;
             obtained_iron++;
             is_chance_meet = true;
         }
 
-        if (durability - MINING_DAMAGE == 0) {
+        if (durability - MINING_DAMAGE == 0)
+        {
             durability = 0;
         }
         else
@@ -332,7 +345,8 @@ void Mining(int &life, float &durability, PickAxes &pickAxe, int &exp, int &iron
         }
     }
 
-    if (obtained_iron == 0) {
+    if (obtained_iron == 0)
+    {
         exp++;
     }
     else
@@ -345,7 +359,8 @@ void Mining(int &life, float &durability, PickAxes &pickAxe, int &exp, int &iron
 
 void Forge(int &gold, int &iron)
 {
-    if (iron < FORGE_COST) {
+    if (iron < FORGE_COST)
+    {
         std::cout << "Lo siento, no se puede forjar una armadura! " << std::endl;
         return;
     }
@@ -358,12 +373,13 @@ void Forge(int &gold, int &iron)
 void Repair(int &gold, int &turn, PickAxes &pickAxes, float &durability)
 {
     int cost;
-    if (turn % 2 == 0) {
+    if (turn % 2 == 0)
+    {
         std::cout << "Lo siento, hoy no se puede reparar el pico" << std::endl;
         return;
     }
 
-    cost = GetPickAxeDurabilty(pickAxes) - durability;
+    cost = GetPickAxeDurability(pickAxes) - durability;
     if (gold < cost)
     {
         std::cout << "Lo siento, no tienes suficiente dinero para arreglar tu pico" << std::endl;
@@ -371,7 +387,7 @@ void Repair(int &gold, int &turn, PickAxes &pickAxes, float &durability)
     }
 
     gold -= cost;
-    durability = GetPickAxeDurabilty(pickAxes);
+    durability = GetPickAxeDurability(pickAxes);
     std::cout << "Has arreglado tu pico!" << std::endl;
 }
 
@@ -379,7 +395,8 @@ void BuyNewPickAxe(int &gold, PickAxes &pickAxe, float &durability)
 {
     int cost;
     PickAxes new_pickaxe;
-    if (pickAxe == PickAxes::DAIMON) {
+    if (pickAxe == PickAxes::DAIMON)
+    {
         std::cout << "Lo siento, ya tienes un pico de diamante, no existe uno mejor!" << std::endl;
         return;
     }
@@ -398,18 +415,19 @@ void BuyNewPickAxe(int &gold, PickAxes &pickAxe, float &durability)
     }
 
     cost = GetPickAxePrice(new_pickaxe);
-    if (cost > gold) {
+    if (cost > gold)
+    {
         std::cout << "Lo siento, no tienes suficiente dinero para comprar un pico nuevo!" << std::endl;
         return;
     }
 
     pickAxe = new_pickaxe;
-    durability = GetPickAxeDurabilty(pickAxe);
+    durability = GetPickAxeDurability(pickAxe);
 }
 
 void NFT(int &gold, bool &is_chance_meet)
 {
-    if (GetChance(NFT_CHANCE))
+    if (GetChance(Chances::NFT_CHANCE))
     {
         std::cout << "Conseguiste NFT's! " << std::endl;
         gold += Prices::P_NFT;
@@ -422,13 +440,13 @@ void ShowFinalGame(int life, int gold, int turn)
     std::cout << "Fin del juego" << std::endl;
     std::cout << "Cantidad de turnos " << turn << std::endl;
 
-    if (life <= 0) 
+    if (life <= 0)
     {
         std::cout << "Gorgomir se quedó sin vida :(" << std::endl;
         return;
     }
 
-    std::cout << "Gorgomir cumplió el sueño de su vida consiguío " << GOAL_GOLD << " modenas de oro!" << std::endl;
+    std::cout << "Gorgomir cumplió el sueño de su vida consiguió " << GOAL_GOLD << " monedas de oro!" << std::endl;
 }
 
 void clear_console()
