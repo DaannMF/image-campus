@@ -183,7 +183,9 @@ enum Choices {
 
 const int ROUNDS = 3;
 static void Ejercicio6() {
-    int input, playerScore = 0,computerScore = 0;
+    int userInput, computerChoice, playerScore = 0,computerScore = 0;
+    bool playerWin;
+    srand(time(0));
 
     cout << "Esto es Piedra, Papel o tijeras! Al mejor de " << ROUNDS << endl;
     for (int i = 0; i < ROUNDS; i++)
@@ -193,13 +195,48 @@ static void Ejercicio6() {
         cout << "1 - Piedra" << endl;
         cout << "2 - Papel" << endl;
         cout << "3 - Tijeras" << endl;
-        cin >> input;
+        cin >> userInput;
 
-        
+        computerChoice = (rand() % 3) + 1;
+        switch (computerChoice)
+        {
+            case Choices::PAPER:
+                cout << "Elijo Papel" << endl;
+                break;
+            case Choices::ROCK:
+                cout << "Elijo Roca" << endl;
+                break;
+            case Choices::SCISSORS:
+                cout << "Elijo Tijeras" << endl;
+                break;
+            default:
+            break;
+        }
+
+        playerWin = userInput == Choices::PAPER && computerChoice == Choices::ROCK;
+        playerWin = playerWin || userInput == Choices::ROCK && computerChoice == Choices::SCISSORS;
+        playerWin = playerWin || userInput == Choices::SCISSORS && computerChoice == Choices::PAPER;
+
+        if (playerWin)
+        {
+            playerScore++;
+        }
+        else
+        {
+            computerScore++;
+        }
+    }
+
+    if (playerScore > computerScore) {
+        cout << "Ganaste" << endl;
+    }
+    else
+    {
+        cout << "Perdiste" << endl;
     }
 }
 
 int main()
 {
-    Ejercicio5();
+    Ejercicio6();
 }
