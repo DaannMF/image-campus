@@ -5,6 +5,7 @@
         Clase8.ejercicios.Lists lists = new();
         
         lists.MorseCode("Hola");
-        lists.MorseToAlphabet(".-. --- .--. .-");
+        lists.MorseToAlphabet(".... --- .-.. .-"); // HOLA
+        lists.MorseToAlphabet(".-. --- .--. .-"); // ROPA
     }
 }
