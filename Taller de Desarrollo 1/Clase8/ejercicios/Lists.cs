@@ -39,7 +39,7 @@ namespace Clase8.ejercicios
 
         public void MorseToAlphabet(String morseCode)
         {
-            List<String> codes = morseCode.Split(" ").ToList();
+            List<String> codes = [.. morseCode.Split(" ")];
             String word = "";
 
             foreach (String code in codes)
