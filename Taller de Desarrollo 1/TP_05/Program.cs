@@ -157,7 +157,7 @@ class Program {
     static void DrawInterface() {
         score += Raylib.GetFrameTime() * 10;
         Raylib.DrawText(score.ToString("00000000"), 700, 10, 20, Color.DarkGray);
-        Raylib.DrawText("¡Salta con Espacio!", 10, 10, 20, Color.DarkGray);
+        Raylib.DrawText("¡Jump with Spacebar!", 10, 10, 20, Color.DarkGray);
     }
 
     static void CheckRetry() {
