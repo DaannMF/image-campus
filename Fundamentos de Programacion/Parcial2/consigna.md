@@ -50,4 +50,4 @@ le pide al usuario si desea reiniciar el juego.
 
 NOTA:
 Utilizar la libreria #include <conio.h> para chequear input del teclado utilizando las funciones
-_kbhit() y_getch()
+_kbhit() y _getch()

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
@@ -39,9 +40,10 @@ struct Player
 
 bool check_restart();
 void draw_board(Entities forest[10][10], Player player);
-void check_player_input(Player &player, Entities forest[10][10], GameStates &gameState);
+void check_player_input(char input, Player &player, Entities forest[10][10], GameStates &gameState);
 void set_color(int textColor);
 void reset_color();
+void clear_console();
 
 int main()
 {
@@ -51,7 +53,7 @@ int main()
         Player player(0, 0);
 
         Entities forest[10][10] = {
-            {PlayerEntity, Dirt, Tree, Tree, Tree, Tree, Tree, Tree, Tree, Tree},
+            {Dirt, Dirt, Tree, Tree, Tree, Tree, Tree, Tree, Tree, Tree},
             {Dirt, Dirt, Dirt, Dirt, Dirt, Sand, Sand, Hole, Hole, Tree},
             {Tree, Tree, Hole, Sand, Dirt, Dirt, Sand, Tree, Sand, Tree},
             {Tree, Sand, Sand, Sand, Sand, Dirt, Hole, Dirt, Dirt, Tree},
@@ -64,9 +66,11 @@ int main()
 
         while (gameState == Playing)
         {
-            draw_board(forest, player);
-
-            check_player_input(player, forest, gameState);
+            while (!kbhit())
+                draw_board(forest, player);
+            
+            char input = getch();
+            check_player_input(input, player, forest, gameState);
         }
 
     } while (check_restart());
@@ -80,59 +84,53 @@ bool check_restart()
     return restart == 'y';
 }
 
-void check_player_input(Player &player, Entities forest[10][10], GameStates &gameState)
+void check_player_input(char input, Player &player, Entities forest[10][10], GameStates &gameState)
 {
     Vector2 nextPos = player.position;
-    char input;
-    cout << "Enter your move (w, a, s, d): ";
-    cin >> input;
+    clear_console();
 
-    switch (input)
+    switch (tolower(input))
     {
     case 'w':
-        if (player.position.x > 0)
-        {
-            nextPos.x--;
-        }
+        nextPos.x = max(nextPos.x - 1, 0);
         break;
     case 'a':
-        if (player.position.y > 0)
-        {
-            nextPos.y--;
-        }
+        nextPos.y = max(nextPos.y - 1, 0);
         break;
     case 's':
-        if (player.position.x < 9)
-        {
-            nextPos.x++;
-        }
+        nextPos.x = min(nextPos.x + 1, 9);
         break;
     case 'd':
-        if (player.position.y < 9)
-        {
-            nextPos.y++;
-        }
+        nextPos.y = min(nextPos.y + 1, 9);
         break;
     }
 
-    if (forest[nextPos.x][nextPos.y] == Tree)
+    switch (forest[nextPos.x][nextPos.y])
     {
+    case Tree:
         cout << "You can't move there!" << endl;
-    }
-    else if (forest[nextPos.x][nextPos.y] == Hole)
-    {
+        break;
+    case Sand:
+        if (player.hasHearth)
+        {
+            cout << "Oh no ! You break the hearth" << endl;
+            gameState = GameOver;
+        }
+        else
+        {
+            player.position = nextPos;
+        }
+        break;
+    case Hole:
         cout << "You fell into a hole!" << endl;
         gameState = GameOver;
-    }
-    else if (forest[nextPos.x][nextPos.y] == Crystal_Hearth)
-    {
+        break;
+    case Crystal_Hearth:
         cout << "You found the crystal hearth!" << endl;
         player.hasHearth = true;
-        forest[nextPos.x][nextPos.y] = PlayerEntity;
         player.position = nextPos;
-    }
-    else if (forest[nextPos.x][nextPos.y] == Exit)
-    {
+        break;
+    case Exit:
         if (player.hasHearth)
         {
             cout << "You won the game!" << endl;
@@ -142,12 +140,10 @@ void check_player_input(Player &player, Entities forest[10][10], GameStates &gam
         {
             cout << "You need the crystal hearth to exit!" << endl;
         }
-    }
-    else
-    {
-        forest[player.position.x][player.position.y] = Dirt;
-        forest[nextPos.x][nextPos.y] = PlayerEntity;
+        break;
+    default:
         player.position = nextPos;
+        break;
     }
 }
 
@@ -157,16 +153,23 @@ void draw_board(Entities forest[10][10], Player player)
     {
         for (int j = 0; j < 10; j++)
         {
+            if (player.position.x == i && player.position.y == j)
+            {
+                if (player.hasHearth)
+                {
+                    set_color(31);
+                };
+                cout << "P ";
+                continue;
+            }
             switch (forest[i][j])
             {
-            case PlayerEntity:
-                cout << "P ";
-                break;
             case Dirt:
                 set_color(95);
                 cout << "X ";
                 break;
             case Sand:
+                set_color(34);
                 cout << "S ";
                 break;
             case Tree:
@@ -215,5 +218,9 @@ void set_color(int textColor)
     cout << "\033[" << textColor << "m";
 }
 
-// Function to reset the console color
 void reset_color() { cout << "\033[0m"; }
+
+void clear_console()
+{
+    cout << "\033[2J\033[1;1H";
+}
